@@ -8,9 +8,11 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Date;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.lee.o2o.exceptions.ShopOperationException;
 import com.lee.o2o.BaseTest;
 import com.lee.o2o.dto.ShopExecution;
 import com.lee.o2o.entity.Area;
@@ -24,6 +26,30 @@ public class ShopServiceTest extends BaseTest{
 	private ShopService shopService;
 	
 	@Test
+	public void testGetShopList() {
+		Shop shopCondition = new Shop();
+		ShopCategory sc = new ShopCategory();
+		sc.setShopCategoryId(3L);
+		shopCondition.setShopCategory(sc);
+		ShopExecution se = shopService.getShopList(shopCondition, 2, 3);
+		System.out.println("店铺列表数 : " + se.getShopList().size());
+		System.out.println("店铺总数 : " + se.getCount());
+	}
+	
+	@Test
+	@Ignore
+	public void testModifyShop()throws ShopOperationException, FileNotFoundException{
+		Shop shop = new Shop();
+		shop.setShopId(10L);
+		shop.setShopName("修改后店铺名称");
+		File shopImg = new File("D://笔记截图/MySql/1.png");
+		InputStream is = new FileInputStream(shopImg);
+		ShopExecution shopExecution = shopService.modifyShop(shop, is, "1.png");
+		System.out.println("新的图片地址:" + shopExecution.getShop().getShopImg());
+	}
+	
+	@Test
+	@Ignore
 	public void addShopTest() throws FileNotFoundException {
 		Shop shop = new Shop();
 		PersonInfo owner = new PersonInfo();
@@ -35,9 +61,9 @@ public class ShopServiceTest extends BaseTest{
 		shop.setOwner(owner);
 		shop.setArea(area);
 		shop.setShopCategory(shopCategory);
-		shop.setShopName("测试店铺3");
-		shop.setShopAddr("test3");
-		shop.setPhone("test3");
+		shop.setShopName("读写分离service测试");
+		shop.setShopAddr("test4");
+		shop.setPhone("test4");
 //		shop.setShopImg("test1");
 		shop.setCreateTime(new Date());
 		shop.setEnableStatus(ShopStateEnum.CHECK.getState());

@@ -3,6 +3,7 @@ package com.lee.o2o.dao;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Date;
+import java.util.List;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -19,6 +20,36 @@ public class ShopDaoTest extends BaseTest{
 	private ShopDao shopDao;
 	
 	@Test
+	public void testQueryShopListAndCount() {
+		Shop shopCondition = new Shop();
+		PersonInfo owner = new PersonInfo();
+		owner.setUserId(1L);
+		shopCondition.setOwner(owner);
+		List<Shop> shopList = shopDao.queryShopList(shopCondition, 0, 5);
+		int count = shopDao.queryShopCount(shopCondition);
+		System.out.println("店鋪列表行数 : " + shopList.size());
+		System.out.println("店鋪总数 : " + count);
+		ShopCategory sc = new ShopCategory();
+		sc.setShopCategoryId(3L);
+		shopCondition.setShopCategory(sc);
+		shopList = shopDao.queryShopList(shopCondition, 0, 2);
+		System.out.println("店鋪列表行数 : " + shopList.size());
+		count = shopDao.queryShopCount(shopCondition);
+		System.out.println("店鋪总数 : " + count);
+	}
+	
+	@Test
+	@Ignore
+	public void testQueryByShopId() {
+		Long shopId = 15L;
+		Shop shop = shopDao.queryByShopId(shopId);
+		System.out.println(shop.toString());
+		System.out.println(shop.getShopName());
+		System.out.println(shop.getArea().getAreaName());
+		System.out.println(shop.getShopCategory().getShopCategoryName());
+	}
+	
+	@Test
 	@Ignore
 	public void testInsertShop() {
 		Shop shop = new Shop();
@@ -31,7 +62,7 @@ public class ShopDaoTest extends BaseTest{
 		shop.setOwner(owner);
 		shop.setArea(area);
 		shop.setShopCategory(shopCategory);
-		shop.setShopName("测试店铺");
+		shop.setShopName("读写分离测试");
 		shop.setShopAddr("test");
 		shop.setPhone("test");
 		shop.setShopImg("test");
@@ -43,6 +74,7 @@ public class ShopDaoTest extends BaseTest{
 	}
 	
 	@Test
+	@Ignore
 	public void testUpdateShop() {
 		Shop shop = new Shop();
 		shop.setShopId(1L);

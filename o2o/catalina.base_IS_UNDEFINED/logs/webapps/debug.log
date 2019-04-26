@@ -1,63 +1,106 @@
-2019-04-23 12:31:16.253[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id, FROM tb_shop_category ORDER BY priority DESC 
-2019-04-23 12:31:16.305[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
-2019-04-23 12:35:39.076[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
-2019-04-23 12:35:39.100[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
-2019-04-23 12:35:39.119[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 2
-2019-04-23 12:51:41.988[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
-2019-04-23 12:51:43.842[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
-2019-04-23 12:51:45.229[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 2
-2019-04-23 12:54:07.569[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
-2019-04-23 12:54:07.602[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
-2019-04-23 12:54:07.618[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 2
-2019-04-23 13:02:02.081[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
-2019-04-23 13:02:02.109[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
-2019-04-23 13:02:02.125[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 2
-2019-04-23 13:02:02.135[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id = ? ORDER BY priority DESC 
-2019-04-23 13:02:02.137[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 1(Long)
-2019-04-23 13:02:02.140[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 0
-2019-04-23 13:04:13.887[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
-2019-04-23 13:04:13.914[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
-2019-04-23 13:04:13.930[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 2
-2019-04-23 13:04:13.939[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id = ? ORDER BY priority DESC 
-2019-04-23 13:04:13.940[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 1(Long)
-2019-04-23 13:04:13.943[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 1
-2019-04-23 17:02:11.432[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-==>  Preparing: SELECT area_id,area_name,priority,create_time,last_edit_time FROM tb_area ORDER BY priority DESC 
-2019-04-23 17:02:11.465[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-==> Parameters: 
-2019-04-23 17:02:11.485[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-<==      Total: 2
-2019-04-23 17:02:11.537[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
-2019-04-23 17:02:11.537[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
-2019-04-23 17:02:11.540[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 1
-2019-04-23 17:02:11.554[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_desc=?, shop_addr=?, last_edit_time=? where shop_id=? 
-2019-04-23 17:02:11.556[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-==> Parameters: ��������(String), ���Ե�ַ(String), 2019-04-23 17:02:11.551(Timestamp), 1(Long)
-2019-04-23 17:02:11.626[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-<==    Updates: 1
-2019-04-23 17:02:11.635[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-==>  Preparing: SELECT area_id,area_name,priority,create_time,last_edit_time FROM tb_area ORDER BY priority DESC 
-2019-04-23 17:02:11.635[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-==> Parameters: 
-2019-04-23 17:02:11.636[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-<==      Total: 2
-2019-04-23 17:02:11.673[main]DEBUGcom.lee.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?,?,?, ?,?) 
-2019-04-23 17:02:11.684[main]DEBUGcom.lee.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 2(Integer), 1(Long), ���Ե���3(String), null, test3(String), test3(String), null, null, 2019-04-23 17:02:11.669(Timestamp), 2019-04-23 17:02:11.669(Timestamp), 0(Integer), �����(String)
-2019-04-23 17:02:11.728[main]DEBUGcom.lee.o2o.dao.ShopDao.insertShop-<==    Updates: 1
-2019-04-23 17:02:11.732[main]DEBUGcom.lee.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\12\2019042317021163370.png
-2019-04-23 17:02:11.732[main]DEBUGcom.lee.o2o.util.ImageUtil-current complete addr is:D:\project\o2o\image\upload\item\shop\12\2019042317021163370.png
-2019-04-23 17:02:11.987[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_name=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, advice=?, area_id = ?, shop_category_id=? where shop_id=? 
-2019-04-23 17:02:11.988[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-==> Parameters: ���Ե���3(String), test3(String), test3(String), upload\item\shop\12\2019042317021163370.png(String), 2019-04-23 17:02:11.669(Timestamp), 0(Integer), �����(String), 2(Integer), 1(Long), 12(Long)
-2019-04-23 17:02:11.990[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-<==    Updates: 1
-2019-04-23 17:04:18.288[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-==>  Preparing: SELECT area_id,area_name,priority,create_time,last_edit_time FROM tb_area ORDER BY priority DESC 
-2019-04-23 17:04:18.315[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-==> Parameters: 
-2019-04-23 17:04:18.333[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-<==      Total: 2
-2019-04-23 17:04:18.377[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
-2019-04-23 17:04:18.378[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
-2019-04-23 17:04:18.379[main]DEBUGcom.lee.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 1
-2019-04-23 17:04:18.390[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_desc=?, shop_addr=?, last_edit_time=? where shop_id=? 
-2019-04-23 17:04:18.392[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-==> Parameters: ��������(String), ���Ե�ַ(String), 2019-04-23 17:04:18.388(Timestamp), 1(Long)
-2019-04-23 17:04:18.498[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-<==    Updates: 1
-2019-04-23 17:04:18.506[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-==>  Preparing: SELECT area_id,area_name,priority,create_time,last_edit_time FROM tb_area ORDER BY priority DESC 
-2019-04-23 17:04:18.506[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-==> Parameters: 
-2019-04-23 17:04:18.507[main]DEBUGcom.lee.o2o.dao.AreaDao.queryArea-<==      Total: 2
-2019-04-23 17:04:18.523[main]DEBUGcom.lee.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?,?,?, ?,?) 
-2019-04-23 17:04:18.528[main]DEBUGcom.lee.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 2(Integer), 1(Long), ���Ե���3(String), null, test3(String), test3(String), null, null, 2019-04-23 17:04:18.522(Timestamp), 2019-04-23 17:04:18.522(Timestamp), 0(Integer), �����(String)
-2019-04-23 17:04:18.529[main]DEBUGcom.lee.o2o.dao.ShopDao.insertShop-<==    Updates: 1
-2019-04-23 17:04:18.543[main]DEBUGcom.lee.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\13\2019042317041870338.png
-2019-04-23 17:04:18.543[main]DEBUGcom.lee.o2o.util.ImageUtil-current complete addr is:D:\project\o2o\image\upload\item\shop\13\2019042317041870338.png
-2019-04-23 17:04:18.771[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_name=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, advice=?, area_id = ?, shop_category_id=? where shop_id=? 
-2019-04-23 17:04:18.772[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-==> Parameters: ���Ե���3(String), test3(String), test3(String), upload\item\shop\13\2019042317041870338.png(String), 2019-04-23 17:04:18.522(Timestamp), 0(Integer), �����(String), 2(Integer), 1(Long), 13(Long)
-2019-04-23 17:04:18.773[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-<==    Updates: 1
+2019-04-26 00:38:53.766[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryByShopId] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 00:38:53.773[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 00:38:53.792[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s,last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2019-04-26 00:38:53.855[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==> Parameters: 15(Long)
+2019-04-26 00:41:59.700[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryByShopId] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 00:41:59.705[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 00:41:59.729[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2019-04-26 00:41:59.791[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==> Parameters: 15(Long)
+2019-04-26 00:41:59.806[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
+2019-04-26 00:43:16.341[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryByShopId] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 00:43:16.345[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 00:43:16.359[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2019-04-26 00:43:16.421[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==> Parameters: 15(Long)
+2019-04-26 00:43:16.438[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
+2019-04-26 00:47:59.772[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryByShopId] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 00:47:59.776[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 00:47:59.794[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2019-04-26 00:47:59.851[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==> Parameters: 15(Long)
+2019-04-26 00:47:59.865[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
+2019-04-26 00:48:35.902[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryByShopId] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 00:48:35.905[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 00:48:35.923[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2019-04-26 00:48:35.985[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==> Parameters: 15(Long)
+2019-04-26 00:48:35.999[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
+2019-04-26 02:06:59.976[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryByShopId] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 02:06:59.980[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 02:06:59.996[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2019-04-26 02:07:00.063[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==> Parameters: 10(Long)
+2019-04-26 02:07:00.078[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
+2019-04-26 02:07:00.092[main]DEBUGcom.lee.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\10\2019042602070047552.png
+2019-04-26 02:07:00.092[main]DEBUGcom.lee.o2o.util.ImageUtil-current complete addr is:D:\project\o2o\image\upload\item\shop\10\2019042602070047552.png
+2019-04-26 02:07:00.223[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.updateShop] user [master] Strateg,SqlCommanType[UPDATE]..
+2019-04-26 02:07:00.223[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
+2019-04-26 02:07:00.246[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_name=?, shop_img=?, last_edit_time=? where shop_id=? 
+2019-04-26 02:07:00.248[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-==> Parameters: 修改后店铺名称(String), upload\item\shop\10\2019042602070047552.png(String), 2019-04-26 02:07:00.222(Timestamp), 10(Long)
+2019-04-26 02:07:00.280[main]DEBUGcom.lee.o2o.dao.ShopDao.updateShop-<==    Updates: 1
+2019-04-26 02:07:00.281[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryByShopId] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 02:07:00.282[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 02:07:00.282[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2019-04-26 02:07:00.282[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-==> Parameters: 10(Long)
+2019-04-26 02:07:00.284[main]DEBUGcom.lee.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
+2019-04-26 16:51:26.490[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopList] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 16:51:26.494[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 16:51:26.509[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-04-26 16:51:26.570[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==> Parameters: 1(Long), 0(Integer), 5(Integer)
+2019-04-26 16:51:26.588[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-<==      Total: 5
+2019-04-26 17:12:00.992[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopList] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:12:00.995[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:12:01.012[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-04-26 17:12:01.092[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==> Parameters: 1(Long), 0(Integer), 5(Integer)
+2019-04-26 17:12:01.108[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-<==      Total: 5
+2019-04-26 17:12:01.115[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopCount] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:12:01.115[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:12:01.116[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-04-26 17:12:01.116[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==> Parameters: 1(Long)
+2019-04-26 17:12:01.241[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-<==      Total: 1
+2019-04-26 17:19:32.636[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopList] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:19:32.639[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:19:32.653[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-04-26 17:19:32.703[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==> Parameters: 1(Long), 0(Integer), 5(Integer)
+2019-04-26 17:19:32.720[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-<==      Total: 5
+2019-04-26 17:19:32.727[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopCount] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:19:32.727[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:19:32.727[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-04-26 17:19:32.728[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==> Parameters: 1(Long)
+2019-04-26 17:19:32.729[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-<==      Total: 1
+2019-04-26 17:19:32.730[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopList] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:19:32.730[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:19:32.731[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? and s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-04-26 17:19:32.731[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==> Parameters: 3(Long), 1(Long), 0(Integer), 2(Integer)
+2019-04-26 17:19:32.762[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-<==      Total: 2
+2019-04-26 17:19:32.763[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopCount] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:19:32.763[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:19:32.763[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? and s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-04-26 17:19:32.764[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==> Parameters: 3(Long), 1(Long)
+2019-04-26 17:19:32.769[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-<==      Total: 1
+2019-04-26 17:47:43.473[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopList] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:47:43.477[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:47:43.491[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-04-26 17:47:43.537[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==> Parameters: 0(Integer), 3(Integer)
+2019-04-26 17:47:43.553[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-<==      Total: 3
+2019-04-26 17:47:43.558[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopCount] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:47:43.558[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:47:43.559[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-04-26 17:47:43.559[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==> Parameters: 
+2019-04-26 17:47:43.560[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-<==      Total: 1
+2019-04-26 17:49:15.508[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopList] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:49:15.511[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:49:15.531[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-04-26 17:49:15.592[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==> Parameters: 3(Long), 0(Integer), 3(Integer)
+2019-04-26 17:49:15.610[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-<==      Total: 3
+2019-04-26 17:49:15.615[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopCount] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:49:15.616[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:49:15.616[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-04-26 17:49:15.617[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==> Parameters: 3(Long)
+2019-04-26 17:49:15.618[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-<==      Total: 1
+2019-04-26 17:50:08.532[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopList] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:50:08.536[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:50:08.555[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-04-26 17:50:08.597[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==> Parameters: 3(Long), 3(Integer), 3(Integer)
+2019-04-26 17:50:08.612[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-<==      Total: 1
+2019-04-26 17:50:08.618[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopCount] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-04-26 17:50:08.618[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-04-26 17:50:08.618[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-04-26 17:50:08.618[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==> Parameters: 3(Long)
+2019-04-26 17:50:08.620[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-<==      Total: 1

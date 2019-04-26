@@ -13,7 +13,7 @@ public class ShopExecution {
 	private String stateInfo;
 
 	//店铺数量
-	private int couuntl;
+	private int count;
 
 	//操作的Shop(增删改店铺的时候用到)
 	private Shop shop;
@@ -63,12 +63,12 @@ public class ShopExecution {
 		this.stateInfo = stateInfo;
 	}
 
-	public int getCouuntl() {
-		return couuntl;
+	public int getCount() {
+		return count;
 	}
 
-	public void setCouuntl(int couuntl) {
-		this.couuntl = couuntl;
+	public void setCount(int count) {
+		this.count = count;
 	}
 
 	public Shop getShop() {
