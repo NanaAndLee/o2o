@@ -3,18 +3,18 @@ package com.lee.o2o.entity;
 import java.util.Date;
 
 public class ProductCategory {
-	private Long productCategeoryId;
+	private Long productCategoryId;
 	private Long shopId;
 	private String productCategoryName;
 	private Integer priority;
 	private Date createTime;
 
-	public Long getProductCategeoryId() {
-		return productCategeoryId;
+	public Long getProductCategoryId() {
+		return productCategoryId;
 	}
 
-	public void setProductCategeoryId(Long productCategeoryId) {
-		this.productCategeoryId = productCategeoryId;
+	public void setProductCategoryId(Long productCategoryId) {
+		this.productCategoryId = productCategoryId;
 	}
 
 	public Long getShopId() {

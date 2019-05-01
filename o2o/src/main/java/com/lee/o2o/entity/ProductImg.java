@@ -5,7 +5,7 @@ import java.util.Date;
 public class ProductImg {
 	private Long productImgId;
 	private String imgAddr;
-	private String ingDesc;
+	private String imgDesc;
 	private Integer priority;
 	private Date createTime;
 	private Long productId;
@@ -26,12 +26,12 @@ public class ProductImg {
 		this.imgAddr = imgAddr;
 	}
 
-	public String getIngDesc() {
-		return ingDesc;
+	public String getImgDesc() {
+		return imgDesc;
 	}
 
-	public void setIngDesc(String ingDesc) {
-		this.ingDesc = ingDesc;
+	public void setImgDesc(String imgDesc) {
+		this.imgDesc = imgDesc;
 	}
 
 	public Integer getPriority() {

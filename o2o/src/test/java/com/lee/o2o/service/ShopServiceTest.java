@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.lee.o2o.exceptions.ShopOperationException;
 import com.lee.o2o.BaseTest;
+import com.lee.o2o.dto.ImageHolder;
 import com.lee.o2o.dto.ShopExecution;
 import com.lee.o2o.entity.Area;
 import com.lee.o2o.entity.PersonInfo;
@@ -44,7 +45,8 @@ public class ShopServiceTest extends BaseTest{
 		shop.setShopName("修改后店铺名称");
 		File shopImg = new File("D://笔记截图/MySql/1.png");
 		InputStream is = new FileInputStream(shopImg);
-		ShopExecution shopExecution = shopService.modifyShop(shop, is, "1.png");
+		ImageHolder thumbnail = new ImageHolder("1.png", is);
+		ShopExecution shopExecution = shopService.modifyShop(shop, thumbnail);
 		System.out.println("新的图片地址:" + shopExecution.getShop().getShopImg());
 	}
 	
@@ -70,7 +72,8 @@ public class ShopServiceTest extends BaseTest{
 		shop.setAdvice("审核中");
 		File shopImg = new File("D://笔记截图/MySql/3.png");
 		InputStream is = new FileInputStream(shopImg);
-		ShopExecution se = shopService.addShop(shop, is, shopImg.getName());
+		ImageHolder thumbnail = new ImageHolder(shopImg.getName(), is);
+		ShopExecution se = shopService.addShop(shop, thumbnail);
 		assertEquals(ShopStateEnum.CHECK.getState(),se.getState());
 	}
 
