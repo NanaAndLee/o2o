@@ -1,62 +1,10 @@
-2019-05-01 00:01:38.800[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ProductDao.queryProductById] user [master] Strateg,SqlCommanType[SELECT]..
-2019-05-01 00:01:38.981[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
-2019-05-01 00:01:39.405[main]DEBUGcom.lee.o2o.dao.ProductDao.queryProductById-==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
-2019-05-01 00:01:41.246[main]DEBUGcom.lee.o2o.dao.ProductDao.queryProductById-==> Parameters: 1(Long)
-2019-05-01 00:01:42.671[main]DEBUGcom.lee.o2o.dao.ProductDao.queryProductById-<==      Total: 1
-2019-05-01 00:01:50.098[main]DEBUGcom.lee.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\1\2019050100015099661.png
-2019-05-01 00:01:50.103[main]DEBUGcom.lee.o2o.util.ImageUtil-current complete addr is:D:\project\o2o\image\upload\item\shop\1\2019050100015099661.png
-2019-05-01 00:02:02.386[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ProductImgDao.queryProductImgList] user [master] Strateg,SqlCommanType[SELECT]..
-2019-05-01 00:02:02.392[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
-2019-05-01 00:02:02.398[main]DEBUGcom.lee.o2o.dao.ProductImgDao.queryProductImgList-==>  Preparing: SELECT product_img_id, img_addr, img_desc, priority, create_time, product_id FROM tb_product_img WHERE product_id=? ORDER BY product_img_id ASC 
-2019-05-01 00:02:02.405[main]DEBUGcom.lee.o2o.dao.ProductImgDao.queryProductImgList-==> Parameters: 1(Long)
-2019-05-01 00:02:02.574[main]DEBUGcom.lee.o2o.dao.ProductImgDao.queryProductImgList-<==      Total: 0
-2019-05-01 00:02:02.580[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ProductImgDao.deleteProductImgByProductId] user [master] Strateg,SqlCommanType[DELETE]..
-2019-05-01 00:02:02.585[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
-2019-05-01 00:02:02.590[main]DEBUGc.l.o.d.ProductImgDao.deleteProductImgByProductId-==>  Preparing: DELETE FROM tb_product_img WHERE product_id = ? 
-2019-05-01 00:02:02.597[main]DEBUGc.l.o.d.ProductImgDao.deleteProductImgByProductId-==> Parameters: 1(Long)
-2019-05-01 00:02:02.605[main]DEBUGc.l.o.d.ProductImgDao.deleteProductImgByProductId-<==    Updates: 0
-2019-05-01 00:02:04.144[main]DEBUGcom.lee.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\1\2019050100020435654.png
-2019-05-01 00:02:04.149[main]DEBUGcom.lee.o2o.util.ImageUtil-current complete addr is:D:\project\o2o\image\upload\item\shop\1\2019050100020435654.png
-2019-05-01 00:02:04.826[main]DEBUGcom.lee.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\1\2019050100020498222.png
-2019-05-01 00:02:04.832[main]DEBUGcom.lee.o2o.util.ImageUtil-current complete addr is:D:\project\o2o\image\upload\item\shop\1\2019050100020498222.png
-2019-05-01 00:02:05.447[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ProductImgDao.batchInsertProductImg] user [master] Strateg,SqlCommanType[INSERT]..
-2019-05-01 00:02:05.451[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
-2019-05-01 00:02:05.949[main]DEBUGc.lee.o2o.dao.ProductImgDao.batchInsertProductImg-==>  Preparing: INSERT INTO tb_product_img(img_addr,img_desc,priority, create_time,product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
-2019-05-01 00:02:06.033[main]DEBUGc.lee.o2o.dao.ProductImgDao.batchInsertProductImg-==> Parameters: upload\item\shop\1\2019050100020435654.png(String), null, null, 2019-05-01 00:02:04.824(Timestamp), 1(Long), upload\item\shop\1\2019050100020498222.png(String), null, null, 2019-05-01 00:02:05.434(Timestamp), 1(Long)
-2019-05-01 00:02:06.044[main]DEBUGc.lee.o2o.dao.ProductImgDao.batchInsertProductImg-<==    Updates: 2
-2019-05-01 00:02:09.889[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ProductDao.updateProduct] user [master] Strateg,SqlCommanType[UPDATE]..
-2019-05-01 00:02:09.894[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
-2019-05-01 00:02:10.155[main]DEBUGcom.lee.o2o.dao.ProductDao.updateProduct-==>  Preparing: UPDATE tb_product SET product_name=?, product_desc=?, img_addr=?, last_edit_time=?, product_category_id=? WHERE product_id = ? AND shop_id=? 
-2019-05-01 00:02:10.176[main]DEBUGcom.lee.o2o.dao.ProductDao.updateProduct-==> Parameters: 正式商品测试1(String), 正式的商品测试1(String), upload\item\shop\1\2019050100015099661.png(String), 2019-05-01 00:01:24.693(Timestamp), 1(Long), 1(Long), 1(Long)
-2019-05-01 00:02:10.187[main]DEBUGcom.lee.o2o.dao.ProductDao.updateProduct-<==    Updates: 1
-2019-05-01 00:04:01.903[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ProductDao.queryProductById] user [master] Strateg,SqlCommanType[SELECT]..
-2019-05-01 00:04:01.906[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
-2019-05-01 00:04:01.913[main]DEBUGcom.lee.o2o.dao.ProductDao.queryProductById-==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
-2019-05-01 00:04:01.935[main]DEBUGcom.lee.o2o.dao.ProductDao.queryProductById-==> Parameters: 1(Long)
-2019-05-01 00:04:01.954[main]DEBUGcom.lee.o2o.dao.ProductDao.queryProductById-<==      Total: 2
-2019-05-01 00:04:01.962[main]DEBUGcom.lee.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\1\2019050100040127616.png
-2019-05-01 00:04:01.962[main]DEBUGcom.lee.o2o.util.ImageUtil-current complete addr is:D:\project\o2o\image\upload\item\shop\1\2019050100040127616.png
-2019-05-01 00:04:02.195[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ProductImgDao.queryProductImgList] user [master] Strateg,SqlCommanType[SELECT]..
-2019-05-01 00:04:02.195[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
-2019-05-01 00:04:02.196[main]DEBUGcom.lee.o2o.dao.ProductImgDao.queryProductImgList-==>  Preparing: SELECT product_img_id, img_addr, img_desc, priority, create_time, product_id FROM tb_product_img WHERE product_id=? ORDER BY product_img_id ASC 
-2019-05-01 00:04:02.196[main]DEBUGcom.lee.o2o.dao.ProductImgDao.queryProductImgList-==> Parameters: 1(Long)
-2019-05-01 00:04:02.198[main]DEBUGcom.lee.o2o.dao.ProductImgDao.queryProductImgList-<==      Total: 2
-2019-05-01 00:04:02.200[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ProductImgDao.deleteProductImgByProductId] user [master] Strateg,SqlCommanType[DELETE]..
-2019-05-01 00:04:02.200[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
-2019-05-01 00:04:02.201[main]DEBUGc.l.o.d.ProductImgDao.deleteProductImgByProductId-==>  Preparing: DELETE FROM tb_product_img WHERE product_id = ? 
-2019-05-01 00:04:02.201[main]DEBUGc.l.o.d.ProductImgDao.deleteProductImgByProductId-==> Parameters: 1(Long)
-2019-05-01 00:04:02.203[main]DEBUGc.l.o.d.ProductImgDao.deleteProductImgByProductId-<==    Updates: 2
-2019-05-01 00:04:02.204[main]DEBUGcom.lee.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\1\2019050100040210871.png
-2019-05-01 00:04:02.204[main]DEBUGcom.lee.o2o.util.ImageUtil-current complete addr is:D:\project\o2o\image\upload\item\shop\1\2019050100040210871.png
-2019-05-01 00:04:02.223[main]DEBUGcom.lee.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\1\2019050100040231187.png
-2019-05-01 00:04:02.223[main]DEBUGcom.lee.o2o.util.ImageUtil-current complete addr is:D:\project\o2o\image\upload\item\shop\1\2019050100040231187.png
-2019-05-01 00:04:02.314[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ProductImgDao.batchInsertProductImg] user [master] Strateg,SqlCommanType[INSERT]..
-2019-05-01 00:04:02.314[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
-2019-05-01 00:04:02.336[main]DEBUGc.lee.o2o.dao.ProductImgDao.batchInsertProductImg-==>  Preparing: INSERT INTO tb_product_img(img_addr,img_desc,priority, create_time,product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
-2019-05-01 00:04:02.339[main]DEBUGc.lee.o2o.dao.ProductImgDao.batchInsertProductImg-==> Parameters: upload\item\shop\1\2019050100040210871.png(String), null, null, 2019-05-01 00:04:02.223(Timestamp), 1(Long), upload\item\shop\1\2019050100040231187.png(String), null, null, 2019-05-01 00:04:02.313(Timestamp), 1(Long)
-2019-05-01 00:04:02.340[main]DEBUGc.lee.o2o.dao.ProductImgDao.batchInsertProductImg-<==    Updates: 2
-2019-05-01 00:04:02.341[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ProductDao.updateProduct] user [master] Strateg,SqlCommanType[UPDATE]..
-2019-05-01 00:04:02.341[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : master
-2019-05-01 00:04:02.349[main]DEBUGcom.lee.o2o.dao.ProductDao.updateProduct-==>  Preparing: UPDATE tb_product SET product_name=?, product_desc=?, img_addr=?, last_edit_time=?, product_category_id=? WHERE product_id = ? AND shop_id=? 
-2019-05-01 00:04:02.350[main]DEBUGcom.lee.o2o.dao.ProductDao.updateProduct-==> Parameters: 正式商品测试1(String), 正式的商品测试1(String), upload\item\shop\1\2019050100040127616.png(String), 2019-05-01 00:04:01.89(Timestamp), 1(Long), 1(Long), 1(Long)
-2019-05-01 00:04:02.353[main]DEBUGcom.lee.o2o.dao.ProductDao.updateProduct-<==    Updates: 1
+2019-05-05 13:43:55.379[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopList] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-05-05 13:43:55.399[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-05-05 13:43:55.415[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in(select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-05-05 13:43:55.468[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-==> Parameters: 1(Long), 0(Integer), 20(Integer)
+2019-05-05 13:43:55.526[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopList-<==      Total: 5
+2019-05-05 13:43:55.533[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.lee.o2o.dao.ShopDao.queryShopCount] user [slave] Strateg,SqlCommanType[SELECT]..
+2019-05-05 13:43:55.533[main]DEBUGcom.lee.o2o.dao.split.DynamicDataSource-所使用的数据源为 : slave
+2019-05-05 13:43:55.534[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in(select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-05-05 13:43:55.534[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-==> Parameters: 1(Long)
+2019-05-05 13:43:55.537[main]DEBUGcom.lee.o2o.dao.ShopDao.queryShopCount-<==      Total: 1
